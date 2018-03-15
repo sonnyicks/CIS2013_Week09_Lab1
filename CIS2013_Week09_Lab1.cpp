@@ -1,11 +1,23 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main(){
-	char name[6] = "Bobby";
-	char last[8] = "Rockers";
+string test = "Sonny";
+
+cout << test << endl;
+test = "Icks";
+cout << test << endl;
+cout << " The length of test is: " << test.length() << endl;
+cout << " The 3rd char is: " << test[2] << endl;
+
+for (int i=0; i<test.length(); i++){
+	cout << " You spell Sonny with a " << test[i] << endl;
 	
-	cout << "First name: " << name << endl;
-	cout << "Last name: " << last << endl;
+	cin >> test;
+	cout << "Test is now equal to " << test << endl;
+}
+
+	
 	return 0;
 }
